@@ -31,6 +31,7 @@ public class CollegeStudentController {
 	public String studentDashbord(@RequestParam("rollNumber") int rollNumber, @RequestParam("password") String password,
 			ModelMap modelMap) {
 		CollegeStudent student = studentRepository.findById(rollNumber).orElse(null);
+		System.out.println("Hello Inside DashBord");
 		
 		String pass=new BCryptPasswordEncoder().encode(password);
 		
