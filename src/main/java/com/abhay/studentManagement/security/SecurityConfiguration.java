@@ -9,7 +9,7 @@
 //	
 //	
 //	@Bean
-//	public PasswordEncoder passwordEncoder()
+//	public PasswordEncoder passw()
 //	{
 //	    return new BCryptPasswordEncoder();
 //	}
