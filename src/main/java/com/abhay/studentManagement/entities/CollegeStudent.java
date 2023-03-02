@@ -1,12 +1,16 @@
 package com.abhay.studentManagement.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "collegestudent")
 public class CollegeStudent {
 	
 	@Id
+	@Column(name="rollnumber")
 	private int rollNumber;
 	private String name;
 	private String department;

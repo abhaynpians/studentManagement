@@ -30,7 +30,9 @@ public class CollegeStudentController {
 	@RequestMapping(value = "/studentDashbord", method = RequestMethod.POST)
 	public String studentDashbord(@RequestParam("rollNumber") int rollNumber, @RequestParam("password") String password,
 			ModelMap modelMap) {
+		System.out.println("First Line");
 		CollegeStudent student = studentRepository.findById(rollNumber).orElse(null);
+		
 		System.out.println("Hello Inside DashBord");
 		
 		String pass=new BCryptPasswordEncoder().encode(password);
