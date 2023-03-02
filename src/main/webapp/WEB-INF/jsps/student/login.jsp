@@ -7,10 +7,14 @@
 <title>Student Login Portal</title>
 </head>
 <body>
+<form action="studentDashbord" method="post">
+<pre>
 <h2>Login:</h2>
 Roll Number: <input type="text" name="rollNumber"/>
 Password:    <input type="password" name="password"/>
 <input type="submit" value="login"/>
 ${msg}
+</pre>
+</form>
 </body>
 </html>
